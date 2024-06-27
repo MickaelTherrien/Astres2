@@ -1,10 +1,20 @@
+/**
+ * The Main class contains the main method to run the application.
+ */
 public class Main {
+
+    /**
+     * The main method to run the application.
+     * It creates instances of celestial bodies and simulates their orbiting behavior.
+     *
+     * @param args command-line arguments
+     */
     public static void main(String[] args) {
-        //Astre astre = new Astre("Astre",55555);
+        // Astre astre = new Astre("Astre", 55555);
 
-        //Soleil soleil = new Soleil("Soleil",4444);
+        // Soleil soleil = new Soleil("Soleil", 4444);
 
-        Planete planete = new Planete("Planete",333);
+        Planete planete = new Planete("Planete", 333);
         planete.orbiter();
 
         Planete terre = new Planete("Terre", 22);
@@ -17,7 +27,7 @@ public class Main {
         System.out.println("     -----------------------------------------");
         System.out.println("     ");
 
-        Satellite satelitte = new Satellite("Sputnik 1", 1);
-        satelitte.orbiter();
+        Satellite satellite = new Satellite("Sputnik 1", 1);
+        satellite.orbiter();
     }
 }
